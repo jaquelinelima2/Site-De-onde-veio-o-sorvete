@@ -1,2 +1,2 @@
 # Site-historia-do-sorvete
- Estudo de Html e css 
+ Estudo de Html e CSS
