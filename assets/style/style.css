@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@800&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color:hsl(348, 33%, 16%);
+  --secundary-color:hsl(61, 91%, 65%);
+  --bannerTop-color:hsla(0, 16%, 12%, 0.664);
+  --bannerTop-color-02:hsla(0, 0%, 0%, 0.664);
+  --bannerTop-font-color:rgb(240, 211, 82);
+  --nav-color:hsl(337, 100%, 49%);
+  --font-color-contrast:rgb(255, 0, 106);
+  --link-color:hsl(59, 100%, 50%);
+  --link-color-hover:hsl(40, 100%, 91%);
+  --font-nav:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-banner:'Bitter', serif;
+  --font-body:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ --secundary-color-dark:hsla(54, 85%, 57%, 0.774);
+}
+
+body{
+  background: var(--primary-color);
+  font-family: var(--font-body);
+  text-align: justify;  
+}
+
+p{
+  margin: 15px 0px;
+
+}
+
+/*----Home-Barra-de-Navegação-----*/
+
+#home #nav_bar{
+  background-color: var(--nav-color);  
+  font-size:2rem ;
+  font-family:var(--font-nav);
+  font-weight:500;
+  min-width: 300px;
+  box-shadow:2px 0px 12px black;
+  
+}
+
+#home #nav_bar ul{
+  display: flex;
+  list-style-type: none; 
+}
+
+#home #nav_bar li{
+  padding: 14px;
+}
+
+#home #nav_bar a{
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+#home #nav_bar a:hover{
+  color: var(--link-color-hover);
+  transition-duration: .2s;
+}
+
+/*---Home-Banner-Página-Principal---*/
+
+#home .banner_top{
+  background-image: url(/exe005-cap17/image/banner_fundo.png);
+  height: 230px;
+  min-width: 200px; 
+  box-shadow:2px 0px 12px black;
+}
+
+#home .banner_top p{
+  margin: auto;
+  padding-top: 80px;
+  color: var(--bannerTop-font-color);
+  font-size: 5rem;
+  font-family:var(--font-banner);
+  text-align: center;
+  text-shadow: 3px 4px 5px black;
+}
+
+#home footer{
+  height: 50px;
+  background-image: linear-gradient(to bottom, var(--bannerTop-color-02), var(--bannerTop-color));
+}
+
+/*---Conteúdo-Página-Principal---*/
+
+.conteudo_pg_principal{
+  font-size: 1.5rem;
+  background: var(--secundary-color);
+  padding:30px 30px 10px 30px;
+  border-radius: 30px;  
+}
+
+.conteudo_pg_principal h1, h2{
+  color:var(--font-color-contrast) ;
+}
+
+.conteudo_pg_principal #texto_historiaDoSorvete{
+  max-width: 800px;
+  margin-left: 5px;
+ 
+}
+
+
+.conteudo_pg_principal #imgHistoriadoSorvete{
+  max-width: 200px;
+  border-radius:1rem; 
+  float: right;
+  padding-top: 40px;
+
+}
+
+.conteudo_pg_principal article, main, aside, section{
+  margin: auto;
+  min-width: 300px;
+  max-width: 1000px;
+  
+
+}
+
+.conteudo_Secundario{
+  margin-top: 20px;
+}
+
+.conteudo_Secundario .video{
+  padding-bottom:10px;
+}
+
+.conteudo_Secundario .receitasRecomendadas{
+  background-color:var(--secundary-color-dark);
+  columns: 2;
+  max-width: 500px;
+  margin:0;
+  padding: 10px 25px 10px;
+  border-radius: 10px;
+}
